@@ -1,0 +1,53 @@
+<view class="container">
+  <!-- 头部 -->
+  <view class="top">
+    <view class="top-box">
+      <image class="top-image" src="../../image/avatar.png" mode="widthFix"></image>
+      <text>{{uname}}</text>
+    </view>
+  </view>
+
+  <!-- 内容 -->
+  <view class="body">
+    <view class="body-left">
+      <text>0</text>
+      <text>我的分佣</text>
+    </view>
+    <view class="body-right">
+      <text>17元</text>
+      <text>我的余额</text>
+    </view>
+  </view>
+
+ <!-- 功能 -->
+  <navigator url="" class="item solid">
+    <image src="../../image/profile.png" class="item-image1"></image>
+    <text>邀请好友</text>
+    <image src="../../image/07.png" class="item-image"></image>
+  </navigator>
+
+  <navigator url="" class="item">
+    <image src="../../image/message.png" class="item-image1"></image>
+    <text>我的好友</text>
+    <image src="../../image/07.png" class="item-image"></image>
+  </navigator>
+
+  <navigator url="" class="item">
+    <image src="../../image/01.png" class="item-image1"></image>
+    <text>订单中心</text>
+    <image src="../../image/07.png" class="item-image"></image>
+  </navigator>
+
+  <navigator url="" class="item">
+    <image src="../../image/06.png" class="item-image1"></image>
+    <text>交易记录</text>
+    <image src="../../image/07.png" class="item-image"></image>
+  </navigator>
+
+  <navigator url="" class="item">
+    <image src="../../image/icon_API.png" class="item-image1"></image>
+    <text>我的设备</text>
+    <image src="../../image/07.png" class="item-image"></image>
+  </navigator>
+
+</view>

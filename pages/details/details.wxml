@@ -1,0 +1,57 @@
+<scroll-view scroll-y class="container">
+  <!-- 轮播图 -->
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}">
+    <swiper-item class="item">
+      <image src="../../image/banner-01.png" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item class="item">
+      <image src="../../image/banner-02.png" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item class="item">
+      <image src="../../image/link-01.png" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item class="item">
+      <image src="../../image/link-02.png" mode="scaleToFill"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="title">
+    <text>产品名称</text>
+  </view>
+
+  <view class="goods">
+    <view class="goods-title">产品简介</view>
+    <!-- 申请数量 -->
+    <view class="number">
+      <text>申请数量</text>
+      <view class="goods-number">
+        <button class="reduce" bindtap="reduce" size="mini" type="primary">-</button>
+
+        <view class="content">{{number}}</view>
+
+        <button class="add" bindtap="add"  size="mini" type="primary">
+          +
+        </button>
+      </view>
+    </view>
+    <!-- 产品介绍 -->
+    <view class="details">
+      <text>产品介绍</text>
+      <view class="image">
+        <image class="image-picture" src="../../image/poster.jpg" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+
+</scroll-view>
+
+<!-- 计算 购买 -->
+<view class="total">
+  <view class="total-number">
+    合计：
+    <text>{{total}}元</text>
+  </view>
+  <navigator class="total-goods" url="/pages/mypage/mypage">
+    <view> 立即申请</view>
+  </navigator>
+</view>

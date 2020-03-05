@@ -1,0 +1,46 @@
+<view class='changeInfo'>
+ <!-- 开头图片 -->
+  <view class="tupian">
+    <image src="../../image/slide.png" mode="aspectFill"></image>
+  </view>
+
+  <view class="zhuce">
+    <text>注册</text>
+  </view>
+
+  <!-- 姓名输入 -->
+  <view class='changeInfoName'>
+    <view class="item">
+      <text>姓名：</text>
+    </view>
+    <view class="item-inp">
+      <input placeholder='请输入姓名' bindinput='getNameValue' value='{{name}}' />
+    </view>
+  </view>
+
+<!-- 手机号输入 -->
+  <view class='changeInfoName'>
+    <view class="item">
+      <text>手机号：</text>
+    </view>
+    <view class="item-inp">
+      <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}' />
+    </view>
+  </view>
+
+<!-- 验证码输入 -->
+  <view class='changeInfoName fu'>
+    <view class="item">
+      <text>验证码：</text>
+    </view>
+    <view class="item-inp">
+      <input class="inp" placeholder='请输验证码' bindinput='getCodeValue' value='{{code}}' style='width:53%;' />
+    </view>
+    <!-- 内部验证码按钮 -->
+    <view class="yanzm">
+       <button type="primary" size="mini" bindtap='getVerificationCode' disabled='{{disabled}}'>{{codename}}</button>
+    </view>
+  </view>
+
+  <button type="primary" class='changeBtn' bindtap='save'>提交</button>
+</view>

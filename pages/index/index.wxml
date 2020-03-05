@@ -1,0 +1,42 @@
+<!-- 轮播图 -->
+<swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}">
+  <swiper-item class="item">
+    <image src="../../image/banner-01.png" mode="scaleToFill"></image>
+  </swiper-item>
+  <swiper-item class="item">
+    <image src="../../image/banner-02.png" mode="scaleToFill"></image>
+  </swiper-item>
+  <swiper-item class="item">
+    <image src="../../image/link-01.png" mode="scaleToFill"></image>
+  </swiper-item>
+  <swiper-item class="item">
+    <image src="../../image/link-02.png" mode="scaleToFill"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 产品简介 -->
+<view class="content-title">
+   <text>产品列表</text>
+</view>
+<view class="content"> 
+  <image src="../../image/banner-01.png" mode="scaleToFill"></image>
+  <view class="item">
+    <view class="item-text">
+      <text class="item-title">产品名称</text>
+      <text class="item-body">介绍</text>
+    </view>
+    <button  class="gotoDetails" bindtap="gotoDetails">申请</button>
+  </view>
+</view>
+
+<view class="content"> 
+  <image src="../../image/banner-01.png" mode="scaleToFill"></image>
+  <view class="item">
+    <view class="item-text">
+      <text class="item-title">产品名称</text>
+      <text class="item-body">介绍</text>
+    </view>
+    <button  class="gotoDetails" bindtap="gotoDetails">申请</button>
+  </view>
+</view>
+
